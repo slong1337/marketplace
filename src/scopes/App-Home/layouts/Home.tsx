@@ -2,7 +2,6 @@ import { CardChips } from "../components/CardChips"
 
 export function Home() {
 
-
     return (
         <div className="">
             <div className="my-2">
