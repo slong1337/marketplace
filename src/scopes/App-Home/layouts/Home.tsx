@@ -8,7 +8,7 @@ export function Home() {
 
                 <div className="">
                     <CardChips 
-                        img='/img/chair.jpg'
+                        img='img/chair.jpg'
                         category = 'CHAIRS'
                         title = 'Modern Yellow Chair'
                         subTitle = 'Tinners House'
