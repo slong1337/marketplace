@@ -14,7 +14,6 @@ export function Home() {
                         subTitle = 'Tinners House'
                         price = {420}
                         description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quam ac nulla blandit vehicula at vitae ipsum'
-                        quantity = {1}
                     />
                 </div>
 
@@ -22,3 +21,8 @@ export function Home() {
         </div>
     )
 }
+
+// const cart = {
+//     title:'Modern Yellow Chair'
+//     quantity: 1
+// }

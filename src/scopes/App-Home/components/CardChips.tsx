@@ -7,14 +7,20 @@ export type CardChipsProps = {
     subTitle: string
     price: number
     description: string
-    quantity: number
+    quantity?: number
     className?: string
 }
 
 export const CardChips = (props: CardChipsProps) => {
     const {img, category, title, subTitle, price, description, quantity, className } = props
 
-    const [newQuantity, setQuantity] = useState<number>(quantity)
+    const [newQuantity, setQuantity] = useState<number>(() =>
+    Number(localStorage.getItem("quantity")) || 1
+    )
+
+    useEffect(() => {
+        localStorage.setItem("quantity", newQuantity.toString())
+    }, [newQuantity])
 
     const plusQuantity = () => {
         setQuantity(prev => prev + 1)
@@ -53,11 +59,11 @@ export const CardChips = (props: CardChipsProps) => {
 
                                 <div className="flex bg-[#26272A] rounded-full justify-center items-center p-2">
 
-                                    <button onClick={minusQuantity} className=" text-2xl px-2">-</button>
+                                    <button onClick={minusQuantity} className="text-2xl px-2 -mt-1">-</button>
 
                                     <p className="px-2 text-[#B9B9B9] text-2xl w-12 text-center">{newQuantity}</p>
 
-                                    <button onClick={plusQuantity} className="text-2xl px-2">+</button>
+                                    <button onClick={plusQuantity} className="text-2xl px-2 -mt-1">+</button>
 
                                 </div>
 
