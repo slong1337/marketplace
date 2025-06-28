@@ -13,7 +13,7 @@ export function Home() {
                         title = 'Modern Yellow Chair'
                         subTitle = 'Tinners House'
                         price = {420}
-                        description = 'Yellow Chair – a vibrant and stylish piece that brightens any space. Its sunny hue adds warmth and works well in modern or retro interiors. Perfect as an accent in living rooms, offices, or kids' rooms.'
+                        description = 'Yellow Chair – a vibrant and stylish piece that brightens any space. Its sunny hue adds warmth and works well in modern or retro interiors. Perfect as an accent in living rooms, offices, or kids rooms.'
                     />
                 </div>
 
