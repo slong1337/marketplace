@@ -38,7 +38,7 @@ export const CardChips = (props: CardChipsProps) => {
 
                 <div className="w-full lg:w-1/2 flex justify-center items-center flex-col bg-white p-4 relative">
 
-                    <p className="text-[#2D2E3278] absolute lg:top-[-130px] top-4 lg:left-0 left-7 z-10 rounded-xl border-2 px-4 py-1 lg:text-xl text-xs">AD1DAS</p>
+                    <p className="text-[#2D2E3278] absolute lg:top-[-130px] top-4 lg:left-0 left-7 z-10 rounded-xl border-2 px-4 py-1 lg:text-xl text-xs">AD11FL</p>
 
                     <img src={img} alt={title} className="w-full max-w-[460px] h-auto"/>
 
